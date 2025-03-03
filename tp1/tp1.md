@@ -6,6 +6,8 @@ PARTIE 1 :
 
 🌞 Définir une adresse IP statique sur chaque machine
 
+[admin@node1 ~]$ cat /etc/sysconfig/network-scripts/ifcfg-ens160
+
 DEVICE=ens160
 NAME=lan
 
@@ -18,6 +20,7 @@ DNS1=8.8.8.8
 
 ```----------------------------------------------------------```
 
+[admin@node2 ~]$ cat /etc/sysconfig/network-scripts/ifcfg-ens160
 DEVICE=ens160
 NAME=lan
 
@@ -29,7 +32,7 @@ GATEWAY=10.1.1.2
 DNS1=8.8.8.8
 
 ```----------------------------------------------------------```
-
+[admin@dhcp ~]$ cat /etc/sysconfig/network-scripts/ifcfg-ens160
 DEVICE=ens160
 NAME=lan
 
