@@ -2,7 +2,7 @@
 
 Last configuration change at 15:07:25 UTC Wed Mar 5 2025
 
-
+```
 version 15.2
 service timestamps debug datetime msec
 service timestamps log datetime msec
@@ -34,9 +34,9 @@ spanning-tree extend system-id
 
 
 interface Ethernet0/0
- no shutdown
- switchport access vlan 10
- switchport mode access
+no shutdown
+switchport access vlan 10
+switchport mode access
 
 
 interface Ethernet0/1
